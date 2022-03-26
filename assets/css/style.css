@@ -1,34 +1,37 @@
 :root {
     --white: #fff;
-    --textColor: rgb(255, 111, 255);
+    --textColor: rgb(243, 108, 255);
     --border-radius: 7.5px;
     --bgcolor: #2e2a2a;
 }
 
 body {
     background-color: var(--bgcolor);
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-h1, h3 {
-    color: var(--textColor);
-    text-align: center;
-}
-
 #first {
     color: var(--white);
     text-align: center;
     margin-right: 8%;
-    margin-left: 8%;
-}
+    margin-left: 8%; 
 
+    }     
 h2 {
     color: var(--textColor);
     border: 1px solid var(--white);
     border-radius: var(--border-radius);
     padding: 4px;
     font-weight: bold;
+    text-align: center;
     transition: all 0.5s ease-in-out; 
 }
+h1, h3 {
+    color: var(--textColor);
+    text-align: center;
+ 
+}
+
+
 
 #box {
     display: flex;
@@ -52,8 +55,8 @@ h2 {
 #box section:hover,
 #box section:hover h2 {
         box-shadow: inset 0px 0px 8px
-      rgba(232, 102, 236, 1), 0 0 15px
-      rgba(232, 102, 236, 1);
+      rgb(161, 45, 255), 0 0 15px
+      rgb(0, 162, 255);
       }
 
 #box h2 {
@@ -64,14 +67,21 @@ h2 {
 
 pre {
     background-image: linear-gradient(
-        rgba(232, 102, 236, 0.3) 0%,
-        rgba(232, 102, 236, 0.6) 100%
+        rgba(247, 202, 248, 0.3) 0%,
+        rgba(228, 139, 255, 0.6) 100%
     );
     color: var(--white);
     border-radius: var(--border-radius);
     user-select: all;
 }
-
+code {
+    /* Monospace font stack is used for our code blocks to make it look more like code */
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+      monospace;
+  }
+  
 @media screen and (max-width: 991px) {
     #box section {
         flex: 0 0 300px;
@@ -95,4 +105,3 @@ pre {
         font-size: small;
     }
 }
-x1.00
