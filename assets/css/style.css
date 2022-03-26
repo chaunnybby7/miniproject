@@ -1,19 +1,18 @@
 :root {
     --white: #fff;
-    --textColor: rgb(245, 29, 245);
+    --textColor: rgb(255, 111, 255);
     --border-radius: 7.5px;
     --bgcolor: #2e2a2a;
 }
 
 body {
     background-color: var(--bgcolor);
-    font-family: 
 }
 
 h1, h3 {
     color: var(--textColor);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+}
 
 #first {
     color: var(--white);
@@ -22,19 +21,12 @@ h1, h3 {
     margin-left: 8%;
 }
 
-code {
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-
-
 h2 {
     color: var(--textColor);
     border: 1px solid var(--white);
     border-radius: var(--border-radius);
     padding: 4px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
     transition: all 0.5s ease-in-out; 
 }
 
@@ -72,8 +64,8 @@ h2 {
 
 pre {
     background-image: linear-gradient(
-        rgba(247, 202, 248, 0.3) 0%,
-        rgba(228, 139, 255, 0.6) 100%
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
     );
     color: var(--white);
     border-radius: var(--border-radius);
