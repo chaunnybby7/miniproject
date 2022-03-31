@@ -20,28 +20,33 @@ h1, h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
+
+/* Heading style properties */     
+h2 {
+    color: var(--textColor);
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius); /* rounded edges around the headers */
+    padding: 4px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out; 
+}
+
+/* Introduction */
 #first {
         color: var(--white);
         text-align: center;
         margin-right: 8%;
         margin-left: 8%; 
         }
-      
-h2 {
-    color: var(--textColor);
-    border: 1px solid var(--white);
-    border-radius: var(--border-radius);
-    padding: 4px;
-    font-weight: bold;
-    transition: all 0.5s ease-in-out; 
-}
 
+/* Container for flexboxes */
 #box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Paragraph style properties in the container for flexboxes */
 #box p {
     color: var(--textColor);
 }
@@ -49,7 +54,7 @@ h2 {
 #box section {
     border: 1px dashed var(--white);
     margin: 1%;
-    flex: 0 0 400px;
+    flex: 0 0 400px; /* flex-grow:0, flex-shrink:0, and flex-basis:400px (initial main size of box.) */ 
     padding-left: 12px;
     padding-right: 12px;
     transition: all 0.5s ease-in-out; 
@@ -57,17 +62,19 @@ h2 {
 
 #box section:hover,
 #box section:hover h2 {
-        box-shadow: inset 0px 0px 8px
+        box-shadow: inset 0px 0px 8px /* inset: the default shadow is outside the border, the shadow spreads outward. */
       rgb(161, 45, 255), 0 0 15px
       rgb(0, 162, 255);
       }
-
+/* when mouse is hovered over the columns, there will be a box-shadow effect highlighting the boxes in colors.*/
 #box h2 {
     position: relative;
     margin-top: -20px;
     background-color: var(--bgcolor);
 }
 
+/* Inside the columns we declared style properties for the text placeholder consisting of codes, 
+using a linear-gradient effect in shades of pink */
 pre {
     background-image: linear-gradient(
         rgba(247, 202, 248, 0.3) 0%,
@@ -77,18 +84,18 @@ pre {
     border-radius: var(--border-radius);
     user-select: all;
 }
-
+/* On screens that are 991px or less, the size of the boxes will be 300px instead of 400px */
 @media screen and (max-width: 991px) {
     #box section {
-        flex: 0 0 300px;
+        flex: 0 0 300px; 
         margin-top: 20px;
         margin-bottom: 20px;
     }
 }
-
+/* On screens that are 768px or less, the box sizes will be 200px */
 @media screen and (max-width: 768px) {
     #box {
-        flex-direction: column;
+        flex-direction: column; /* The direction in which lines of text are stacked */
     }
 
     #box section {
@@ -98,6 +105,6 @@ pre {
     }
 
     p {
-        font-size: small;
+        font-size: small; 
     }
 }
