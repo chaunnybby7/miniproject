@@ -37,7 +37,7 @@ The completed application should meet the following criteria:
  We chose column so the texts will stack in a column (vertically).
 
 
-## Mockup
+## Screenshot of what we have done 
 
 ![](https://media.giphy.com/media/GxJWvgPiWIJxrgfMyE/giphy.gif)
 
